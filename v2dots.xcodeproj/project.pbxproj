@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40A1F3EA180F970C00A39947 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 40A1F3E8180F970C00A39947 /* arrow.png */; };
+		40A1F3EB180F970C00A39947 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 40A1F3E9180F970C00A39947 /* background.png */; };
+		40A1F3ED180F9A3500A39947 /* down.png in Resources */ = {isa = PBXBuildFile; fileRef = 40A1F3EC180F9A3500A39947 /* down.png */; };
 		40CC9271180D17F40085DC2C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CC9270180D17F40085DC2C /* UIKit.framework */; };
 		40CC9273180D17F40085DC2C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CC9272180D17F40085DC2C /* Foundation.framework */; };
 		40CC9275180D17F40085DC2C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CC9274180D17F40085DC2C /* CoreGraphics.framework */; };
@@ -19,9 +22,13 @@
 		40CC928A180D17F50085DC2C /* HaloViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40CC9289180D17F50085DC2C /* HaloViewController.m */; };
 		40CC928D180D17F50085DC2C /* HaloViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40CC928B180D17F50085DC2C /* HaloViewController_iPhone.xib */; };
 		40CC9290180D17F60085DC2C /* HaloViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40CC928E180D17F60085DC2C /* HaloViewController_iPad.xib */; };
+		40CC9297180D18D50085DC2C /* phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 40CC9296180D18D50085DC2C /* phone.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		40A1F3E8180F970C00A39947 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
+		40A1F3E9180F970C00A39947 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		40A1F3EC180F9A3500A39947 /* down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down.png; sourceTree = "<group>"; };
 		40CC926D180D17F40085DC2C /* v2dots.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = v2dots.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40CC9270180D17F40085DC2C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		40CC9272180D17F40085DC2C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -39,6 +46,7 @@
 		40CC9289180D17F50085DC2C /* HaloViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HaloViewController.m; sourceTree = "<group>"; };
 		40CC928C180D17F50085DC2C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/HaloViewController_iPhone.xib; sourceTree = "<group>"; };
 		40CC928F180D17F60085DC2C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/HaloViewController_iPad.xib; sourceTree = "<group>"; };
+		40CC9296180D18D50085DC2C /* phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = phone.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +107,12 @@
 		40CC9277180D17F40085DC2C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				40A1F3EC180F9A3500A39947 /* down.png */,
+				40A1F3E8180F970C00A39947 /* arrow.png */,
+				40A1F3E9180F970C00A39947 /* background.png */,
 				40CC9278180D17F40085DC2C /* v2dots-Info.plist */,
 				40CC9279180D17F40085DC2C /* InfoPlist.strings */,
+				40CC9296180D18D50085DC2C /* phone.png */,
 				40CC927C180D17F40085DC2C /* main.m */,
 				40CC927E180D17F50085DC2C /* v2dots-Prefix.pch */,
 				40CC9282180D17F50085DC2C /* Default.png */,
@@ -168,6 +180,10 @@
 				40CC9287180D17F50085DC2C /* Default-568h@2x.png in Resources */,
 				40CC928D180D17F50085DC2C /* HaloViewController_iPhone.xib in Resources */,
 				40CC9290180D17F60085DC2C /* HaloViewController_iPad.xib in Resources */,
+				40CC9297180D18D50085DC2C /* phone.png in Resources */,
+				40A1F3EA180F970C00A39947 /* arrow.png in Resources */,
+				40A1F3EB180F970C00A39947 /* background.png in Resources */,
+				40A1F3ED180F9A3500A39947 /* down.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,7 +242,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: James Wurm (762DT76S72)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: James Wurm (762DT76S72)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -241,6 +258,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "82DD39AB-E106-4BC2-9647-91CCA2644D19";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "82DD39AB-E106-4BC2-9647-91CCA2644D19";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -258,7 +277,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Turbold Tumendemberel (2NMD448DWX)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Turbold Tumendemberel (2NMD448DWX)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -266,6 +286,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "8123EA44-C293-4300-A13A-CD4B1F306849";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "8123EA44-C293-4300-A13A-CD4B1F306849";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -313,6 +335,7 @@
 				40CC9295180D17F60085DC2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

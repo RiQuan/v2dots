@@ -8,6 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HaloViewController : UIViewController
+@interface HaloViewController : UIViewController <UIAlertViewDelegate>{
+    CGPoint velocity;
+    bool up;
+    UIAlertView *alert;
+    bool moveEnable;
+    
+    NSTimer *timer;
+    float m_alphaInterval;
+}
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UIImageView *upArrowImgView;
+@property (weak, nonatomic) IBOutlet UIImageView *downArrowImgView;
 
 @end
